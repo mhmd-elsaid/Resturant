@@ -1,0 +1,392 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962 ;
+    box-sizing: border-box;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+/*------ Nav -------*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.7)!important;
+}
+
+.navbar-brand img {
+    height: 5rem;
+    margin-left: 50px;
+    transition:all 1.5s ease-in-out;
+}
+.navbar-brand img:hover{
+    -webkit-transform:rotate(360deg);
+    border-radius: 50%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:#fff;
+    padding-top: .8rem;
+    padding-right: 2.5rem;
+    font-size: 1.1rem
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e67e22;
+}
+
+/*---- Header ----*/
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)), url(../img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+.caption h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    padding-bottom: 1rem;
+}
+
+
+.btn-lg{
+    border: .1rem solid #e67e22;
+    border-radius: 2rem;
+    color: #e67e22;
+    margin-right: 1.5rem;
+}
+.btn-lg:hover{
+    background-color: #e67e22;
+    color: #fff;
+    border: .1rem solid #e67e22;
+}
+
+
+/*---- Food Delivery ----*/
+
+.food-delivery {
+    margin: 1.5rem;
+}
+h2{
+    letter-spacing: .15rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+h2::after{
+    display:block;
+    content: "";
+    width: 5rem;
+    height: .2rem;
+    background-color: #e67e22;
+    margin: 1.5rem auto;
+}
+.food-delivery .lead{
+    width: 70%;
+    margin-left: 15%;
+}
+.features-details{
+    margin-top: 3rem;
+    text-align: left;
+}
+.features-details svg.svg-inline--fa {
+    color: #e67e22;
+    margin-bottom: 1.2rem;
+}
+.features-details h3{
+    font-size: 1.5rem;
+}
+.features-details p{
+    width: 75%;
+}
+
+/*----- gallery -----*/
+
+.gallery img {
+    padding: 0;
+    opacity: .75;
+    background-color: #000;
+}
+.gallery img:hover {
+    opacity: 1;
+}
+
+
+/*------ How It Works ------*/
+
+.how-it-works{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color:#f4f4f4;
+    position: relative;
+}
+
+.how-it-works .app{
+    position: absolute;
+    right: 2rem;
+    width: 22%;
+    margin-top: 2rem;
+}
+.how-it-works ul{
+    list-style-type: none;
+    margin-top: 4rem;
+}
+.how-it-works li{
+    line-height: 23px;
+    text-align: left;
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+.how-it-works .li1 {
+    background-image: url(../img/li1.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.how-it-works .li2 {
+    background-image: url(../img/li2.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.how-it-works .li3 {
+    background-image: url(../img/li3.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.how-it-works a {
+    float: left;
+    margin-left: 3rem;
+}
+
+/*----- Our Cities -----*/
+.cities svg.svg-inline--fa{
+    color: #e67e22;
+    margin-right: 1.3rem;
+    font-size: 1.3rem;
+}
+.cities{
+    margin: 3rem  0;
+}
+.cities-gallery {
+    margin: 2rem;
+}
+.cities ul{
+    list-style-type: none;
+    padding-left: .3rem;
+
+}
+.cities li{
+    padding: .5rem 0;
+}
+.cities h3{
+    font-size: 1.5rem;
+    margin-left: .3rem;
+}
+.cities a:link , .cities a:visited , .cities a:active {
+    color: #e67e22;
+    padding: .3rem;
+}
+
+
+/*----- Customer testimonials -----*/
+.fixed {
+    background-image: url(../img/back-customers.jpg);
+    z-index: -1;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+.dark{
+   background-color: rgba(0, 0, 0, 0.8);
+   color: white ;
+   padding: 6rem 7rem ;
+   line-height: 2rem;
+}
+.fixed-background {
+    position: relative;
+    width: 100%;
+}
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999!important;
+}
+blockquote{
+      font-style: italic;
+}
+.clients img {
+    width: 100%;
+    border-radius: 50%;
+}
+.clients h4{
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 2rem;
+    line-height: 0;
+}
+
+/* Sign up and pricing plans */
+.sign-up{
+    background-color: #f4f4f4;
+    padding: 3rem; 
+}
+.pricing-plans{
+    background-color: #fff;
+    padding: 2rem  0;
+    position: relative;
+}
+.pricing-plans h4 ,.pricing-plans p {
+    margin-left: 2rem;
+}
+.price{
+    font-size: 2.5rem;
+    color: #e67e22;
+}
+.pricing-plans a{
+    margin-left: 7rem;
+}
+.pricing-plans ul{
+    list-style-type: none;
+}
+.pricing-plans li{
+    margin-bottom: 1rem;
+}
+.pricing-plans .svg-inline--fa{
+    color: #e67e22;
+    margin-right: 2rem;
+}
+.starter{
+    margin-bottom: 3.5rem;
+}
+.maps{
+    background-image: url(../img/maps.PNG);
+    background-position: center;
+    background-size: cover;
+}
+.sign-up-form{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding:3.5rem 3rem;
+
+}
+.send-it{
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #888;
+    padding: 3rem 0 ;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+footer .social{
+    float: right;
+    margin-top: -1.2rem;
+}
+
+
+footer a:link ,footer a:visited   {
+    color: #888;
+    margin-right: 2rem;
+}
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+/* footer social icons hover  */
+.social .fa-facebook-f:hover{
+    color:#3b5998;
+}
+.social .fa-twitter:hover{
+    color: #38A1F3;
+}
+.social .fa-google-plus-g:hover{
+    color: #CC3333;
+}
+.social .fa-instagram:hover{
+    color: #f58529;
+}
+
+
+
+
+
+
+
+
+
+/* ---Media Queries--- */
+@media (max-width: 952px){
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: .9rem
+    }
+}
+@media (max-width: 869px){
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: .8rem
+    }
+}
+@media (max-width: 767px) {
+    
+    .btn-lg{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    .clients img {
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer .col-md-6{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fixed-background .row .col-md-4{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width : 575px){
+    .food-delivery .features-details .col-sm-6{
+        margin-bottom: 2rem;
+    }
+    .cities .row .col-sm-6{
+        margin-bottom: 2rem;
+    }
+    .sign-up .row .col-md-6{
+        margin-bottom: 2rem;
+    }
+}
